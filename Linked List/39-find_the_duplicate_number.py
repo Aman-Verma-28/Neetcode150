@@ -12,8 +12,7 @@ class Solution:
         # Found the meeting pointin the looped linked list
         while True:
             slow = nums[slow]
-            fast = nums[nums[fast]]
-            if fast == slow:
+            if (fast := nums[nums[fast]]) == slow:
                 break
 
         # Go simultaneously from the head and the meeting point and they are going to

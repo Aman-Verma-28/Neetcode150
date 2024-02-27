@@ -11,9 +11,8 @@ class Solution:
         heapify(stones)
 
         while length > 1:
-            dif = heappop(stones) - heappop(stones)
 
-            if dif != 0:
+            if (dif := heappop(stones) - heappop(stones)) != 0:
                 heappush(stones, dif)
                 length -=1
             else:
