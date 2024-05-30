@@ -34,7 +34,7 @@ class Solution:
                 cntr[s2[i-w]] += 1
                 match +=1
 
-            if all([cntr[i] == 0 for i in cntr]):
+            if all(cntr[i] == 0 for i in cntr):
                 return True
         return False
 
